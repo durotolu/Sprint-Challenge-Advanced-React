@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from'react';
+import useLocalStorage from './Hook'
+
 
 const PlayerData = ({ playersInfo }) => {
+
+    const [topFive, setTopFive] = useLocalStorage('top5', '')
+    
+    useEffect(() => {
+        const arrayname = playersInfo.filter((player) => player.id < 5)
+        setTopFive(arrayname)
+    }, [playersInfo])
 
     return (
         <div>
