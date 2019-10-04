@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
+import PlayerData from './PlayerData'
 
 const playersApi = 'http://localhost:5000/api/players'
 
@@ -25,7 +26,7 @@ class App extends React.Component {
   render () {
     return (
     <div className="App">
-      
+      <PlayerData playersInfo={this.state.playersInfo} />
     </div>
   );
   }
