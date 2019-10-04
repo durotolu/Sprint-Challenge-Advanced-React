@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from'react';
-import useLocalStorage from './Hook'
+import useLocalStorage from '../Hook'
 
 
 const PlayerData = ({ playersInfo }) => {

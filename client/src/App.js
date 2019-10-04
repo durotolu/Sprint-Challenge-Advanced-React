@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import './App.css';
-import PlayerData from './PlayerData'
+import PlayerData from './__playerData__/PlayerData'
 
 const playersApi = 'http://localhost:5000/api/players'
 
